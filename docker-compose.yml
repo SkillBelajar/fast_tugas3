@@ -3,7 +3,7 @@ services:
   kasir-app:
     build: .
     ports:
-      - "5002:5001"
+      - "6001:5001"
     volumes:
       - ./app:/code  # INI KUNCINYA: Mount folder app lokal ke /code di container
     environment:
