@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  kasir-app:
+    build: .
+    ports:
+      - "5002:5001"
+    volumes:
+      - ./app:/code  # INI KUNCINYA: Mount folder app lokal ke /code di container
+    environment:
+      - PYTHONUNBUFFERED=1
